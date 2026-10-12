@@ -1,0 +1,92 @@
+{
+    "Exp1": {
+        "enable": true,
+        "name": "Experimento 1: Longitud y Cerelidad de Onda",
+        "has_carrito": false,
+        "min_wave_gauges": 2,
+        "max_wave_gauges": 2,
+        "y_limits_ts": [
+            -0.15,
+            0.15
+        ],
+        "casos": {
+            "Caso 1": {
+                "h5_file": "Exp1_Case1.h5",
+                "descripcion": "Caso 1 \n- H = 0.15m \n- h = 0.6m \n- T = 2s",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1",
+                        "x": 5.0,
+                        "color": "r"
+                    },
+                    {
+                        "id": "WG2",
+                        "nombre": "WG2",
+                        "x": 8.0,
+                        "color": "m"
+                    }
+                ]
+            },
+            "Caso 2": {
+                "h5_file": "Exp1_Case2.h5",
+                "descripcion": "Caso 2 \n- H = 0.15m \n- h = 0.6m \n- T = 4s",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1",
+                        "x": 5.0,
+                        "color": "r"
+                    },
+                    {
+                        "id": "WG2",
+                        "nombre": "WG2",
+                        "x": 8.0,
+                        "color": "m"
+                    }
+                ]
+            },
+            "Caso 3": {
+                "h5_file": "Exp1_Case3.h5",
+                "descripcion": "Caso 3 \n- H = 0.1m \n- h = 0.4m \n- T = 2s",
+                "profundidad_inicial": 0.40,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1",
+                        "x": 5.0,
+                        "color": "r"
+                    },
+                    {
+                        "id": "WG2",
+                        "nombre": "WG2",
+                        "x": 8.0,
+                        "color": "m"
+                    }
+                ]
+            },
+            "Caso 4": {
+                "h5_file": "Exp1_Case4.h5",
+                "descripcion": "Caso 4 \n- H = 0.1m \n- h = 0.4m \n- T = 4s",
+                "profundidad_inicial": 0.40,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1",
+                        "x": 5.0,
+                        "color": "r"
+                    },
+                    {
+                        "id": "WG2",
+                        "nombre": "WG2",
+                        "x": 8.0,
+                        "color": "m"
+                    }
+                ],
+                "has_carrito": false
+            }
+        }
+    }
+}

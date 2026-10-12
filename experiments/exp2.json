@@ -1,0 +1,43 @@
+{
+    "Exp2": {
+        "enable": true,
+        "name": "Experimento 2: Velocidades y trayectorias inducidas por el oleaje",
+        "max_wave_gauges": 0,
+        "has_carrito": false,
+        "requires_particle": true,
+        "y_limits_ts": [
+            -0.15,
+            0.15
+        ],
+        "y_limits_vel_u": [
+            -0.3,
+            0.3
+        ],
+        "y_limits_vel_w": [
+            -0.3,
+            0.3
+        ],
+        "casos": {
+            "Caso 1": {
+                "h5_file": "Exp2_Case1.h5",
+                "descripcion": "Caso 1 \nOnda Estacionaria \n- H = 0.15m \n- h = 0.6m \n- T = 2s",
+                "profundidad_inicial": 0.60,
+                "posicion_particula": [
+                    16.87,
+                    0.30
+                ],
+                "wave_gauges": []
+            },
+            "Caso 2": {
+                "h5_file": "Exp2_Case2.h5",
+                "descripcion": "Caso 2 \nOnda Progresiva \n- H = 0.075m \n- h = 0.6m \n- T = 4s",
+                "profundidad_inicial": 0.60,
+                "posicion_particula": [
+                    16.87,
+                    0.30
+                ],
+                "wave_gauges": []
+            }
+        }
+    }
+}

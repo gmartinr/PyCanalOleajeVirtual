@@ -1,0 +1,55 @@
+{
+    "Exp6": {
+        "enable": true,
+        "name": "Experimento 6: Rotura de oleaje irregular",
+        "min_wave_gauges": 2,
+        "max_wave_gauges": 10,
+        "requires_beach": true,
+        "playa_x": [
+            10.0,
+            30.0
+        ],
+        "playa_altura": 1.0,
+        "x_limits_ts_steps": 50,
+        "y_limits_ts": [
+            -0.1,
+            0.2
+        ],
+        "casos": {
+            "Caso 1": {
+                "h5_file": "Exp6_Case1.h5",
+                "descripcion": "Caso 1 \n- Hs = 0.125m \n- Tp = 2.5s \n- h = 0.6m\n- Slope = 1:10",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1",
+                        "x": 5
+                    },
+                    {
+                        "id": "WG2",
+                        "nombre": "WG2",
+                        "x": 10
+                    }
+                ]
+            },
+            "Caso 2": {
+                "h5_file": "Exp6_Case2.h5",
+                "descripcion": "Caso 2 \n- Hs = 0.1m \n- Tp = 1.5s \n- h = 0.6m\n- Slope = 1:10",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1",
+                        "x": 5
+                    },
+                    {
+                        "id": "WG2",
+                        "nombre": "WG2",
+                        "x": 10
+                    }
+                ]
+            }
+        }
+    }
+}

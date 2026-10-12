@@ -1,0 +1,72 @@
+{
+    "Exp5": {
+        "enable": true,
+        "name": "Experimento 5: Asomeramiento y rotura de oleaje",
+        "min_wave_gauges": 2,
+        "max_wave_gauges": 10,
+        "requires_beach": true,
+        "playa_x": [
+            20.0,
+            30.0
+        ],
+        "playa_altura": 1.0,
+        "x_limits_ts_steps": 50,
+        "y_limits_ts": [
+            -0.1,
+            0.2
+        ],
+        "casos": {
+            "Caso 1": {
+                "h5_file": "Exp5_Case1.h5",
+                "descripcion": "Caso 1 \n- H = 0.15m \n- h = 0.6m \n- T = 4s\n- Slope = 1:10",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1",
+                        "x": 5
+                    },
+                    {
+                        "id": "WG2",
+                        "nombre": "WG2",
+                        "x": 10
+                    }
+                ]
+            },
+            "Caso 2": {
+                "h5_file": "Exp5_Case2.h5",
+                "descripcion": "Caso 2 \n- H = 0.15m \n- h = 0.6m \n- T = 5s\n- Slope = 1:10",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1",
+                        "x": 5
+                    },
+                    {
+                        "id": "WG2",
+                        "nombre": "WG2",
+                        "x": 10
+                    }
+                ]
+            },
+            "Caso 3": {
+                "h5_file": "Exp5_Case3.h5",
+                "descripcion": "Caso 3 \n- H = 0.15m \n- h = 0.6m \n- T = 6s\n- Slope = 1:10",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1",
+                        "x": 5
+                    },
+                    {
+                        "id": "WG2",
+                        "nombre": "WG2",
+                        "x": 10
+                    }
+                ]
+            }
+        }
+    }
+}

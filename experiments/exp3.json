@@ -1,0 +1,67 @@
+{
+    "Exp3": {
+        "enable": true,
+        "name": "Experimento 3: Reflexión de oleaje en playas",
+        "max_wave_gauges": 0,
+        "has_carrito": true,
+        "requires_beach": true,
+        "x_limits_ts_steps": 50,
+        "y_limits_ts": [
+            -0.1,
+            0.3
+        ],
+        "casos": {
+            "Caso 1": {
+                "h5_file": "Exp3_Case1.h5",
+                "descripcion": "Caso 1 \n- H = 0.15m \n- h = 0.6m \n- T = 4s",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [],
+                "carrito_vel": 0.5,
+                "carrito_x": [
+                    20,
+                    0
+                ],
+                "carrito_espera": 20,
+                "playa_x": [
+                    20.0,
+                    30.0
+                ],
+                "playa_altura": 1.0
+            },
+            "Caso 2": {
+                "h5_file": "Exp3_Case2.h5",
+                "descripcion": "Caso 2 \n- H = 0.15m \n- h = 0.6m \n- T = 5s",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [],
+                "carrito_vel": 0.5,
+                "carrito_x": [
+                    20,
+                    0
+                ],
+                "carrito_espera": 20,
+                "playa_x": [
+                    20.0,
+                    30.0
+                ],
+                "playa_altura": 1.0
+            },
+            "Caso 3": {
+                "h5_file": "Exp3_Case3.h5",
+                "descripcion": "Caso 3 \n- H = 0.15m \n- h = 0.6m \n- T = 6s",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [],
+                "carrito_vel": 0.5,
+                "carrito_x": [
+                    20,
+                    0
+                ],
+                "carrito_espera": 20,
+                "playa_x": [
+                    20.0,
+                    30.0
+                ],
+                "playa_altura": 1.0
+            }
+        }
+    }
+}

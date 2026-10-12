@@ -1,0 +1,104 @@
+{
+    "Exp4": {
+        "enable": true,
+        "name": "Experimento 4: Reflexión del oleaje en una barrera parcialmente sumergida",
+        "min_wave_gauges": 1,
+        "max_wave_gauges": 1,
+        "has_carrito": true,
+        "carrito_vel": 0.5,
+        "carrito_x": [
+            24.9,
+            0
+        ],
+        "carrito_espera": 20,
+        "requires_barrera": true,
+        "barrera_x": 24.95,
+        "barrera_z_bottom": -0.25,
+        "barrera_ancho": 0.1,
+        "x_limits_ts_steps": 50,
+        "y_limits_ts": [
+            -0.1,
+            0.3
+        ],
+        "casos": {
+            "Caso 1": {
+                "h5_file": "Exp4_Case1.h5",
+                "descripcion": "Caso 1 \n- H = 0.1m \n- h = 0.6m \n- T = 1s\n- Slope = 1:10",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1 Fijo",
+                        "x": 26.0,
+                        "color": "r"
+                    }
+                ]
+            },
+            "Caso 2": {
+                "h5_file": "Exp4_Case1a2.h5",
+                "descripcion": "Caso 2 \n- H = 0.1m \n- h = 0.6m \n- T = 1.5s\n- Slope = 1:10",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1 Fijo",
+                        "x": 26.0,
+                        "color": "r"
+                    }
+                ]
+            },
+            "Caso 3": {
+                "h5_file": "Exp4_Case1b2.h5",
+                "descripcion": "Caso 3 \n- H = 0.1m \n- h = 0.6m \n- T = 2s\n- Slope = 1:10",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1 Fijo",
+                        "x": 26.0,
+                        "color": "r"
+                    }
+                ]
+            },
+            "Caso 4": {
+                "h5_file": "Exp4_Case2.h5",
+                "descripcion": "Caso 4 \n- H = 0.1m \n- h = 0.6m \n- T = 3s\n- Slope = 1:10",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1 Fijo",
+                        "x": 26.0,
+                        "color": "r"
+                    }
+                ]
+            },
+            "Caso 5": {
+                "h5_file": "Exp4_Case3.h5",
+                "descripcion": "Caso 5 \n- H = 0.1m \n- h = 0.6m \n- T = 4s\n- Slope = 1:10",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1 Fijo",
+                        "x": 26.0,
+                        "color": "r"
+                    }
+                ]
+            },
+            "Caso 6": {
+                "h5_file": "Exp4_Case4.h5",
+                "descripcion": "Caso 6 \n- H = 0.1m \n- h = 0.6m \n- T = 5s\n- Slope = 1:10",
+                "profundidad_inicial": 0.60,
+                "wave_gauges": [
+                    {
+                        "id": "WG1",
+                        "nombre": "WG1 Fijo",
+                        "x": 26.0,
+                        "color": "r"
+                    }
+                ]
+            }
+        }
+    }
+}
