@@ -18,7 +18,7 @@ Aplicación de escritorio interactiva en Python desarrollada con **PySide6** y *
 * **Exportación Fiel de Datos (CSV)**:
   * Generación automática de nombres estandarizados: `mediciones_ExpX_CasoY.csv`.
   * Preservación del historial real de arrastre espacial de sensores (`wg_x_history`).
-  * Redondeo controlado a 4 decimales para eficiencia sin pérdida de precisión física.
+  * Redondeo controlado a 5 decimales para eficiencia sin pérdida de precisión física.
 * **Robustez de la Interfaz**: Notificaciones dinámicas mediante diálogos y etiquetas ante la ausencia de archivos HDF5 o inconsistencias en claves de datos.
 
 ## 🛠️ Instalación y Uso
@@ -26,9 +26,8 @@ Aplicación de escritorio interactiva en Python desarrollada con **PySide6** y *
 ### Clonar el repositorio
 
 ```
-mkdir pycanaloleajevirutal
-cd pycanaloleajevirutal
 git clone https://github.com/gmartinr/PyCanalOleajeVirtual.git
+cd PyCanalOleajeVirtual
 ```
 
 ### Crear entorno virtual e instalar dependencias
