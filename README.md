@@ -49,6 +49,7 @@ sudo apt install libxcb-cursor0 # Biblioteca de ejecución requerida para QT
 
 pip install -r requirements.txt
 
+# Ejecución de prueba, fallará al cargar Experimento 2, por falta de archivos .h5
 python main.py
 ```
 
