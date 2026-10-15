@@ -23,6 +23,14 @@ Aplicación de escritorio interactiva en Python desarrollada con **PySide6** y *
 
 ## 🛠️ Instalación y Uso
 
+### Clonar el repositorio
+
+```
+mkdir pycanaloleajevirutal
+cd pycanaloleajevirutal
+git clone https://github.com/gmartinr/PyCanalOleajeVirtual.git
+```
+
 ### Crear entorno virtual e instalar dependencias
 
 Instalar python, se recomienda utilizar la versión python *3.12.13* ya que fue con esta que se creó este proyecto.
@@ -30,8 +38,12 @@ Instalar python, se recomienda utilizar la versión python *3.12.13* ya que fue 
 ```
 python3 -m venv .venv
 
-# En Linux/macOS:
+# En macOS:
 source .venv/bin/activate
+
+# En Linux:
+source .venv/bin/activate
+sudo apt install libxcb-cursor0 # Biblioteca de ejecución requerida para QT
 
 # En Windows:
 .venv\Scripts\activate
@@ -74,4 +86,13 @@ CanalOleaje/
 ├── main.py                  # Punto de entrada de la aplicación
 ├── requirements.txt         # Dependencias del proyecto
 └── README.md                # Documentación
+```
+---
 
+## Autores
+Gonzalo Martín Ruiz; Gabriela Medellín; Alec Torres-Freyermuth
+
+---
+## Agradecimientos
+
+DGAPA-UNAM PAPIME PE101725 y PE101625

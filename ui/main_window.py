@@ -2,7 +2,7 @@ import time
 import numpy as np
 import pyqtgraph as pg
 
-from PySide6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QGroupBox, QLabel
+from PySide6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QGroupBox, QLabel, QTabWidget
 from PySide6.QtCore import QTimer, Qt
 
 from core.experiment_loader import ExperimentLoader
@@ -10,6 +10,7 @@ from core.csv_exporter import CSVExporter
 
 from ui.panels.selection_panel import SelectionPanel
 from ui.panels.playback_panel import PlaybackPanel
+from ui.panels.about_panel import AboutPanel
 from ui.widgets.canal_plot import CanalPlotWidget
 from ui.widgets.time_series_plot import TimeSeriesPlotWidget
 from ui.widgets.velocity_plot import VelocityPlotWidget
@@ -60,10 +61,13 @@ class MainWindow(QMainWindow):
         self._poblar_experimentos()
 
     def _init_ui(self):
-        central_widget = QWidget()
-        self.setCentralWidget(central_widget)
-        main_layout = QVBoxLayout(central_widget)
-        
+        # QTabWidget como contenedor principal
+        self.tabs = QTabWidget()
+        self.setCentralWidget(self.tabs)
+
+        # --- PESTAÑA 1: SIMULACIÓN ---
+        tab_simulacion = QWidget()
+        main_layout = QVBoxLayout(tab_simulacion)
 
         top_layout = QHBoxLayout()
 
@@ -108,6 +112,13 @@ class MainWindow(QMainWindow):
             )
         )
         main_layout.addWidget(self.plot_part_vel, stretch=1)
+
+        # --- PESTAÑA 2: ACERCA DE / CRÉDITOS ---
+        self.tab_about = AboutPanel()
+
+        # Añadir ambas pestañas
+        self.tabs.addTab(tab_simulacion, "Simulador")
+        self.tabs.addTab(self.tab_about, "Acerca de y Créditos")
 
     def _poblar_experimentos(self):
         exps = self.loader.obtener_experimentos()
